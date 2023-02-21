@@ -1,0 +1,25 @@
+.button {
+    background-color: var(--primary-clr);
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    cursor: pointer;
+
+    img {
+        width: 25px;
+    }
+}
+
+.button.secondary {
+    background-color: white;
+    color: var(--primary-clr);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+
+}

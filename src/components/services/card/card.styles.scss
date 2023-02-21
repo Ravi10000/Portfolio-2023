@@ -1,0 +1,32 @@
+.card {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 1 / .8;
+    max-width: 500px;
+    padding: 25px;
+
+    img {
+        width: 100px;
+    }
+
+    h4 {
+        color: var(--primary-clr);
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.dark {
+    background-color: var(--primary-clr);
+
+    h4 {
+        color: white;
+    }
+}

@@ -1,0 +1,52 @@
+.input-container {
+    position: relative;
+
+    .input {
+        background-color: transparent;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--primary-clr);
+        font-family: 'Montserrat';
+
+        &:focus {
+            outline: none;
+            border: 2px solid var(--primary-clr);
+
+            ~label {
+                font-weight: 500;
+            }
+        }
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    label {
+        border-radius: 7px;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        inset: -15px 20px;
+        background-color: white;
+        padding: 5px 10px;
+        color: var(--primary-clr);
+        transition: all .25s ease;
+    }
+}
+
+@media (min-width: 800px) {
+    .input-container {
+        .input {
+            padding: 20px;
+            &:focus {
+                outline: none;
+                border: 3px solid var(--primary-clr);
+            }
+        }
+    }
+
+}
