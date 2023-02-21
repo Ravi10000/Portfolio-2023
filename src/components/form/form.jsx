@@ -3,7 +3,7 @@ import "./form.styles.scss";
 import Input from "./input/input";
 export default function Form() {
   return (
-    <div className="form-container">
+    <div className="form-container" id="form">
       <div className="left">
         <h2 className="form-title">SAY HI / HIRE ME</h2>
         <form>
