@@ -1,7 +1,7 @@
-import "./editing-sub-section.styles.scss";
+import "./editing.styles.scss";
 import images from "./image";
 
-export default function EditingSubSection() {
+export default function Editing() {
   return (
     <div className="editing">
       <h3 className="__sub-heading">Editing</h3>

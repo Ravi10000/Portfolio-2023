@@ -5,11 +5,11 @@ import Card from "./card/card";
 
 export default function Services() {
   return (
-    <>
+    <div className="services-container">
       <h2 className="services-title">SERVICES THAT I OFFER</h2>
       <section className="services-section">
         <Card
-          image="/ui-ux.png"
+          image="/ui-ux.gif"
           title={
             <>
               ui/ux <br />
@@ -18,8 +18,8 @@ export default function Services() {
           }
         />
         <Card
-          image="/coding.png"
-          dark
+          image="/coding.gif"
+          // dark
           title={
             <>
               website <br />
@@ -28,8 +28,8 @@ export default function Services() {
           }
         />
         <Card
-          image="/gd.png"
-          dark
+          image="/gd.gif"
+          // dark
           title={
             <>
               graphic <br />
@@ -38,7 +38,7 @@ export default function Services() {
           }
         />
         <Card
-          image="/edit.png"
+          image="/editing.gif"
           title={
             <>
               photo <br />
@@ -47,6 +47,6 @@ export default function Services() {
           }
         />
       </section>
-    </>
+    </div>
   );
 }

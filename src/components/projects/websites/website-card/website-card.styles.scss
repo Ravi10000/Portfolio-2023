@@ -1,0 +1,48 @@
+.website-card {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    .website-name {
+        border-bottom: 2px solid var(--primary-clr);
+        text-align: center;
+        font-size: 1.5rem;
+        // font-weight: 300;
+        color: var(--primary-clr);
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translatex(-50%);
+        background-color: rgba(202, 202, 202, 0.301);
+        padding: 20px;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .website-card {
+        &:hover {
+            .website-name {
+                transform: translate(-50%, 0);
+            }
+        }
+
+        .website-name {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // height: 100%;
+            transform: translate(-50%, 100%);
+            transition: all .3s ease-in-out;
+        }
+
+    }
+}

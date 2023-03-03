@@ -3,7 +3,7 @@ import skills from "../../utils/skills";
 
 export default function Skills() {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <h2>what do i work with</h2>
       <div className="skills-container">
         {skills.map((skill) => (

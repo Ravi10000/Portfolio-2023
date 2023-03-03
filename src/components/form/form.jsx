@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <div className="form-container" id="form">
       <div className="left">
-        <h2 className="form-title">SAY HI / HIRE ME</h2>
+        <h2 className="form-title">SAY HI 👋 / HIRE ME</h2>
         <form>
           <div className="inputs-container">
             <Input label="Name" />
@@ -13,8 +13,10 @@ export default function Form() {
             <Input label="Message" textarea />
           </div>
           <div className="buttons-container">
-            <Button secondary icon="/reset.png">Reset</Button>
-            <Button icon="/go.png">Send</Button>
+            <Button secondary icon="/reset.png">
+              Reset
+            </Button>
+            <Button icon="/go-circle.png">Send</Button>
           </div>
         </form>
       </div>

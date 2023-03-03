@@ -1,16 +1,28 @@
 .about {
     padding: 15px;
+    display: grid;
+    place-content: center;
 
     .container {
         padding: 50px 25px;
-        background-color: #d9d9d9a6;
+        background-color: #92e3a9;
         color: var(--primary-clr);
         border-radius: 10px;
+        max-width: 1000px;
+
+        .img-container {
+            position: relative;
+            img {
+                position: absolute;
+                height: 100%;
+            }
+        }
 
         .text-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 500px;
 
             .about-title {
                 letter-spacing: 3px;
@@ -38,6 +50,13 @@
     .about {
         padding: 100px;
         background-color: #E7E7E7;
+
+        .img-container {
+            img {
+                position: static;
+                height: 100%;
+            }
+        }
 
         .container {
             background-color: #D9D9D9;

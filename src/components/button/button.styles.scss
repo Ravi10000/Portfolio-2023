@@ -19,6 +19,14 @@
     }
 }
 
+.button.small {
+    font-size: .75rem;
+
+    img {
+        width: 15px;
+    }
+}
+
 .button.secondary {
     background-color: white;
     color: var(--primary-clr);

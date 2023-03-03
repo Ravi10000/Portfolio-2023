@@ -4,7 +4,9 @@ export default function About() {
   return (
     <div className="about">
       <div className="container">
-        <div className="empty"></div>
+        <div className="img-container">
+          <img src="about-bg.png" alt="about-background" />
+        </div>
         <div className="text-container">
           <h2 className="about-title">ABOUT ME</h2>
           <div className="text">

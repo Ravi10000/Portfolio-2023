@@ -2,65 +2,69 @@
     height: 100vh;
     position: relative;
     overflow-x: hidden;
-
+    // display: grid;
+    // place-content: center;
 
     .main {
         position: relative;
 
         .left {
             display: flex;
-            justify-content: center;
             position: relative;
-            margin-top: 100px;
+            left: 5%;
 
             .circle-bg {
-                height: 80vw;
                 width: 80vw;
-                background: linear-gradient(146.59deg, rgba(217, 217, 217, 0.33) 12.5%, #D9D9D9 70.42%);
+                aspect-ratio: 1 /1;
+                max-width: 400px;
+                background: linear-gradient(146.59deg, rgba(217, 217, 217, 0.445) 12.5%, #d9d9d99f 70.42%);
                 border-radius: 50%;
                 position: absolute;
+                z-index: -99;
                 top: 35%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                left: 0%;
+                transform: translate(-10%, -50%);
             }
 
             .hero-bg {
-                height: 70vh;
+                margin-top: 10%;
+                height: 80vh;
             }
         }
 
         .right {
             position: absolute;
-            bottom: 0;
+            bottom: -5%;
             width: 100%;
-
-            .bg-sign {
-                position: absolute;
-                inset: 0;
-                display: none;
-
-                #sign {
-                    stroke-dasharray: 1659;
-                    stroke-dashoffset: 1659;
-                    animation: signOn 3s ease-in forwards;
-                    opacity: .35;
-                }
-            }
-
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
             color: var(--primary-clr);
 
+            .bg-sign {
+                position: absolute;
+                inset: -100% 0 0 0;
+
+                #sign {
+                    stroke-dasharray: 1659;
+                    stroke-dashoffset: 1659;
+                    animation: signOn 3s ease-in forwards;
+                    opacity: .45;
+                }
+            }
+
+
             .name {
                 text-align: center;
                 font-family: BerkshireSwash;
                 font-size: 5rem;
+                line-height: 80%;
+                text-shadow: 0px 2px 5px #d3d3d35b;
 
                 span {
-                    -webkit-text-fill-color: white;
-                    color: white;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
                     /* Will override color (regardless of order) */
                     -webkit-text-stroke-width: 2.5px;
                     -webkit-text-stroke-color: black;
@@ -69,6 +73,7 @@
             }
 
             .subtitle {
+                background-color: rgba(255, 255, 255, 0.486);
                 letter-spacing: 2px;
                 font-weight: 600;
 
@@ -77,6 +82,47 @@
     }
 
 }
+
+@media (min-width: 500px) {
+    .banner {
+        .main {
+            height: 100vh;
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .left {
+                position: relative;
+
+                .circle-bg {
+                    top: 40%;
+                    left: -30%;
+                    transform: translatey(-50%);
+                }
+            }
+
+            .right {
+                position: relative;
+                .bg-sign {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: -99;
+                    #sign {
+                        stroke-dasharray: 1659;
+                        stroke-dashoffset: 1659;
+                        animation: signOn 3s ease-in forwards;
+                        opacity: .75;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @keyframes signOn {
     to {
