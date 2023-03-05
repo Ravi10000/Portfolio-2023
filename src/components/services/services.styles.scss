@@ -30,6 +30,16 @@
             max-width: 1000px;
             grid-template-columns: 1fr 1fr;
             gap: 50px 20px;
+
+            div:last-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .dark {
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
         }
     }
 

@@ -13,6 +13,7 @@
     cursor: pointer;
     font-weight: 600;
     font-size: .9rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 
     img {
         width: 25px;
@@ -28,8 +29,7 @@
 }
 
 .button.secondary {
+    border: 1.5px solid var(--primary-clr);
     background-color: white;
     color: var(--primary-clr);
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
-
 }

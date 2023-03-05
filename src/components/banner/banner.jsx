@@ -17,12 +17,17 @@ export default function Banner() {
             <br /> Sharma
           </h1>
           <p className="subtitle">FULL STACK WEB DEVELOPER👨‍💻</p>
-          {/* <a href="#form">
-            <Button icon="/code.png">Hire Me</Button>
-          </a> */}
-          <a href="#form">
-            <Button icon="/code.png">Hire Me</Button>
-          </a>
+
+          <div className="buttons-container">
+            <a href="#form">
+              <Button icon="/code.png">Hire Me</Button>
+            </a>
+            <a href="#projects">
+              <Button icon="/work.png" secondary>
+                My Work
+              </Button>
+            </a>
+          </div>
         </div>
         <div className="bg-sign">
           <svg

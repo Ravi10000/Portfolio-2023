@@ -28,6 +28,16 @@ export default function Services() {
           }
         />
         <Card
+          image="/gd.gif"
+          // dark
+          title={
+            <>
+              graphic <br />
+              design
+            </>
+          }
+        />
+        <Card
           dark
           image="/photo-editing-dark.gif"
           title={
@@ -38,14 +48,9 @@ export default function Services() {
           }
         />
         <Card
-          image="/gd.gif"
+          image="/anim.gif"
           // dark
-          title={
-            <>
-              graphic <br />
-              design
-            </>
-          }
+          title="Animation"
         />
       </section>
     </div>

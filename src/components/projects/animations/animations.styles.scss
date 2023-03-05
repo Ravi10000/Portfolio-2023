@@ -1,0 +1,27 @@
+.animations {
+    margin-bottom: 50px;
+
+    .container {
+        display: grid;
+        width: 100%;
+
+        // gap: 20px;
+        img {
+            width: 100%;
+            border: 1px solid var(--primary-clr);
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .animations {
+        .container {
+            place-items: center;
+            gap: 20px;
+            img {
+                width: 70%;
+                border-radius: 15px;
+            }
+        }
+    }
+}
