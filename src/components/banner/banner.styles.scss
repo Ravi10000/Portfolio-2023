@@ -14,20 +14,15 @@
             left: 5%;
 
             .circle-bg {
-                width: 80vw;
-                aspect-ratio: 1 /1;
-                max-width: 400px;
-                background: linear-gradient(146.59deg, rgba(217, 217, 217, 0.445) 12.5%, #d9d9d99f 70.42%);
-                border-radius: 50%;
                 position: absolute;
                 z-index: -99;
-                top: 35%;
-                left: 0%;
-                transform: translate(-10%, -50%);
+                top: 45%;
+                left: -30%;
+                transform: translate(-10%, -50%) scale(1.5);
             }
 
             .hero-bg {
-                margin-top: 10%;
+                margin-top: 2%;
                 height: 80vh;
             }
         }
@@ -42,24 +37,16 @@
             gap: 15px;
             color: var(--primary-clr);
 
-            .bg-sign {
-                position: absolute;
-                inset: -100% 0 0 0;
-
-                #sign {
-                    stroke-dasharray: 1659;
-                    stroke-dashoffset: 1659;
-                    animation: signOn 3s ease-in forwards;
-                    opacity: .45;
-                }
+            button {
+                position: relative;
+                z-index: 99999;
             }
-
 
             .name {
                 text-align: center;
                 font-family: BerkshireSwash;
                 font-size: 5rem;
-                line-height: 80%;
+                line-height: 90%;
                 text-shadow: 0px 2px 5px #d3d3d35b;
 
                 span {
@@ -79,53 +66,124 @@
 
             }
         }
+
+        .bg-sign {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: scale(.25) translate(-150%, -150%);
+
+            #sign {
+                stroke-dasharray: 1659;
+                stroke-dashoffset: 1659;
+                opacity: .45;
+                animation: signOn 7s ease-in-out infinite;
+            }
+        }
     }
 
 }
 
 @media (min-width: 500px) {
     .banner {
+        height: 100vh;
+
         .main {
-            height: 100vh;
-            position: static;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
+            height: 100%;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            gap: 5%;
 
             .left {
                 position: relative;
+                height: max-content;
 
                 .circle-bg {
-                    top: 40%;
-                    left: -30%;
-                    transform: translatey(-50%);
+                    transform: scale(5);
+                    top: 35%;
+                    left: -20%;
+                    animation: animate_blob .5s 3.05s ease-in-out forwards;
+                }
+
+                .hero-bg {
+                    animation: animate_hero .5s 3s ease-in-out forwards;
+
                 }
             }
 
             .right {
-                position: relative;
-                .bg-sign {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    z-index: -99;
-                    #sign {
-                        stroke-dasharray: 1659;
-                        stroke-dashoffset: 1659;
-                        animation: signOn 3s ease-in forwards;
-                        opacity: .75;
-                    }
+                width: fit-content;
+                position: static;
+                align-items: flex-start;
+
+                .name {
+                    text-align: left;
+                }
+
+            }
+
+            .bg-sign {
+                position: absolute;
+                transform: scale(4);
+                z-index: -99;
+
+                #sign {
+                    opacity: .15;
                 }
             }
         }
     }
 }
 
+@keyframes animate_blob {
+    70% {
+        transform: scale(6);
+    }
 
+    80% {
+        transform: scale(5);
+    }
 
-@keyframes signOn {
-    to {
-        stroke-dashoffset: 0;
+    100% {
+        transform: scale(3.5);
     }
 }
+
+@keyframes animate_hero {
+    70% {
+        transform: scale(.8);
+    }
+
+    80% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes signOn {
+    0% {
+        stroke-dashoffset: 1659;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 1659;
+    }
+}
+
+// @keyframes sign {
+//     to {
+//         stroke-dasharray: 1659;
+//         stroke-dashoffset: 1659;
+//         animation: signOn 3s ease-in forwards;
+//         opacity: .45;
+//     }
+// }

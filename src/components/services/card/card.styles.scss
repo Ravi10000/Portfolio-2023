@@ -6,11 +6,11 @@
     border-radius: 25px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     text-align: center;
-    width: 100%;
     aspect-ratio: 1 / .8;
-    max-width: 500px;
-    padding: 25px;
+    width: 95%;
+    max-width: 400px;
 
+    padding: 25px;
     img {
         width: 100px;
     }
@@ -23,11 +23,11 @@
     }
 }
 
-// .dark {
-//     background-color: rgb(187, 187, 187);
-//     // border: 50px solid var(--primary-clr);
+.dark {
+    background-color: var(--primary-clr);
+    border: 50px solid var(--primary-clr);
 
-//     // h4 {
-//     //     color: white;
-//     // }
-// }
+    h4 {
+        color: white;
+    }
+}

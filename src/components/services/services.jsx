@@ -6,7 +6,7 @@ import Card from "./card/card";
 export default function Services() {
   return (
     <div className="services-container">
-      <h2 className="services-title">SERVICES THAT I OFFER</h2>
+      <h2 className="services-title">SERVICES THAT I OFFER👨‍💻</h2>
       <section className="services-section">
         <Card
           image="/ui-ux.gif"
@@ -18,12 +18,22 @@ export default function Services() {
           }
         />
         <Card
-          image="/coding.gif"
-          // dark
+          image="/ux-dark.gif"
+          dark
           title={
             <>
               website <br />
               development
+            </>
+          }
+        />
+        <Card
+          dark
+          image="/photo-editing-dark.gif"
+          title={
+            <>
+              photo <br />
+              editing
             </>
           }
         />
@@ -34,15 +44,6 @@ export default function Services() {
             <>
               graphic <br />
               design
-            </>
-          }
-        />
-        <Card
-          image="/editing.gif"
-          title={
-            <>
-              photo <br />
-              editing
             </>
           }
         />

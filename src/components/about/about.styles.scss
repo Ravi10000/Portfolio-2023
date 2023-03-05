@@ -11,10 +11,12 @@
         max-width: 1000px;
 
         .img-container {
-            position: relative;
+            // position: relative;
+
             img {
-                position: absolute;
-                height: 100%;
+                display: none;
+                // position: absolute;
+                // width: 100%;
             }
         }
 
@@ -49,21 +51,26 @@
 @media (min-width: 800px) {
     .about {
         padding: 100px;
-        background-color: #E7E7E7;
+        background-color: #e7e7e79f;
 
-        .img-container {
-            img {
-                position: static;
-                height: 100%;
-            }
-        }
+
 
         .container {
-            background-color: #D9D9D9;
+            background-color: #92e3a981;
             padding: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
+
+            .img-container {
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: inline;
+                    width: 100%;
+                }
+            }
 
             .text-container {
                 .about-title {

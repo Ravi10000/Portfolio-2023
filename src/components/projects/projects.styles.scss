@@ -1,0 +1,27 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    .projects-title {
+        place-self: flex-start;
+        text-transform: uppercase;
+        color: var(--primary-clr);
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 20px;
+        // margin: 0 0 50px 20%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .projects {
+        .projects-title {
+            padding: 0;
+            text-align: left;
+            margin-left: 10%;
+            margin-bottom: 50px;
+        }
+    }
+
+}

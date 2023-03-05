@@ -32,7 +32,6 @@
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   line-height: 1.2;
   font-weight: 400;
-  scroll-behavior: smooth;
 
   /* background-color: #242424; */
 
@@ -45,6 +44,9 @@
   --secondary-clr: #e7e7e7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;

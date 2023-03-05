@@ -8,22 +8,26 @@
 @media (min-width: 500px) {
     .editing {
         .edited-images {
-            padding: 10%;
+            padding: 10%;   
         }
     }
 }
 
 @media (min-width: 800px) {
     .editing {
+
         .edited-images {
+            // align-self: center;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             padding: 10%;
+            place-content: center;
 
             img {
                 // transform: scale(.75);
-                aspect-ratio: auto;
+                // aspect-ratio: auto;
                 // max-height: 575px;
+                // max-width: fit-content;
                 border-radius: 15px;
                 box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
             }
