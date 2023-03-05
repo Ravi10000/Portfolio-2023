@@ -24,7 +24,7 @@ export default function Banner() {
             </a>
             <a href="#projects">
               <Button icon="/work.png" secondary>
-                My Work
+                See My Work
               </Button>
             </a>
           </div>

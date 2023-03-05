@@ -51,8 +51,8 @@ export default function About() {
               clients.
             </p> */}
             <a href="#form">
-              <Button icon="/responsive.gif" secondary>
-                Hire Me
+              <Button icon="/wave.gif" secondary>
+                Contact Me
               </Button>
             </a>
           </div>

@@ -129,8 +129,10 @@
                 }
 
                 .buttons-container {
-                    gap: 0px;
                     grid-template-columns: 1fr 1fr;
+                    place-items: start;
+                    width: fit-content;
+                    gap: 0;
                 }
 
             }
@@ -150,7 +152,7 @@
 
 @keyframes animate_blob {
     70% {
-        transform: scale(6);
+        transform: scale(5.2);
     }
 
     80% {
@@ -164,7 +166,7 @@
 
 @keyframes animate_hero {
     70% {
-        transform: scale(.8);
+        transform: scale(.85);
     }
 
     80% {
